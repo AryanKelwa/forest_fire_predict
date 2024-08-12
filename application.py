@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request
 import pickle
-app=Flask(__name__)
+application=Flask(__name__)
+app=application
 
 ridge_modle=pickle.load(open(r'models\algerian_ridge_model.pkl','rb'))
 scaler=pickle.load(open(r'models\algerian_ridge_scaler.pkl','rb'))
